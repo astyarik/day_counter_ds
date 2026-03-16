@@ -11,7 +11,10 @@ token = os.getenv("BOT_TOKEN")
 
 CHANNEL_ID = # Paste here ID of channel
 
-bot = commands.Bot(command_prefix="!")
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 COUNT_FILE = "count_day.json"
 
