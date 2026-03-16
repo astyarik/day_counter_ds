@@ -58,7 +58,7 @@ async def collect():
 
 @bot.event
 async def on_ready():
-    print(f"бот запущен как {bot.user}")
+    print(f"Start how {bot.user}")
     collect.start()
 
 
