@@ -9,7 +9,7 @@ import json
 load_dotenv()
 token = os.getenv("BOT_TOKEN")
 
-CHANNEL_ID = 1148871443845754880
+CHANNEL_ID = # Paste here ID of channel
 
 bot = commands.Bot(command_prefix="!")
 
