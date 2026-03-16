@@ -50,9 +50,7 @@ async def collect():
     async with channel.typing():
         await asyncio.sleep(random.uniform(3, 6))
 
-    await channel.send(
-        f"Ждем, пока нам скинут ~~100 рублей~~ фото флистани день {day}"
-    )
+    await channel.send(f"The {day} when I`m wait your answer.")
 
     count_data["day"] += 1
     save_count(count_data)
